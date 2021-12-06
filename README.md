@@ -1,5 +1,25 @@
 # PaisesApp
 
+1. Rutas
+
+2. RouterLink y RouterLinkActive
+
+3. Componentes especializados
+
+4. DebounceTime
+
+5. Inputs
+
+6. SwitchMaps
+
+7. Consumo de APIs
+
+8. Tipado de datos
+
+9. Menú de aplicación
+
+>En esta sección daremos los fundamentos de una aplicación SPA (Single Page Application), y luego, las seguiremos haciendo pero mediante carga perezosa (lazyload), esta es otra aplicación real que nos enseñara mucho de cómo funciona Angular y como la información fluye en ella.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 
 ## Development server
