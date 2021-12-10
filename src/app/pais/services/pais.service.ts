@@ -33,6 +33,11 @@ export class PaisService {
     const url = `${this.apiUrl}/capital/${termino}`
     return this._http.get<Country[]>(url)
   }
+
+  paisXAlpha(id: string): Observable<Country> {
+    const url = `${this.apiUrl}/alpha/${id}`
+    return this._http.get<Country>(url)
+  }
   
   /** @nota es mejor trabajar con HttpCommon que funciona bien con rxjs por sobre fetch */
 }
