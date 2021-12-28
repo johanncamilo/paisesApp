@@ -27,8 +27,10 @@ export class VerPaisComponent implements OnInit {
           switchMap(({ id }) => this._paisService.paisXAlpha(id)), // recibe el valor del observable anterior y retorna un nuevo observable "hace ese switch ese cambio", return implicito
           tap(console.log)
         )
-        .subscribe( (pais: Country[]) => this.pais = pais[0] )
+        .subscribe( (pais) => this.pais = pais )
         // this.pais.idd
+        console.log(`this.pais es: ${this.pais}`);
+        
 
     // * OLD WAY
     /**

@@ -10,17 +10,31 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let pais of paises; let i = index">
+    <tr *ngFor="let pais of paises; let i = index"
+        class="animate__animated animate__fadeIn animate__faster">
       <td>{{ i + 1 }}</td>
       <td>
-        <img [src]="pais.flags.svg" [alt]="pais.name.common" class="small-flag">
+        <!-- ? flag con filtro -->
+        <div *ngIf="pais.flag; then flag_v2 else flag_v3" ></div>
+        
+        <ng-template #flag_v2>
+          <img [src]="pais.flag" [alt]="pais.name.common" class="small-flag">
+        </ng-template>
+        <ng-template #flag_v3>
+          <img [src]="pais.flags.svg" [alt]="pais.name.common" class="small-flag">
+        </ng-template>
+        
+        <!-- ? flag sin filtro -->
+        <!-- <img [src]="pais.flags.svg" [alt]="pais.name.common" class="small-flag"> -->
       </td>
-      <td>{{ pais.name.common }}</td>
+      <td><span *ngIf="pais.name.common; then v3 else v2"></span></td>
       <td>{{ pais.capital }}</td>
       <td>{{ pais.population | number }}</td>
       <td>
         <a [routerLink]="['/pais', pais.cca2]">Leer más...</a>
       </td>
+      <ng-template #v3>{{ pais.name.common }}</ng-template>
+      <ng-template #v2>{{ pais.name }}</ng-template>
     </tr>
   </tbody>
 </table>

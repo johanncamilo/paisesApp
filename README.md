@@ -1,5 +1,7 @@
 # PaisesApp
 
+## Primera Parte
+
 1. Rutas
 
 2. RouterLink y RouterLinkActive
@@ -19,6 +21,20 @@
 9. Menú de aplicación
 
 >En esta sección daremos los fundamentos de una aplicación SPA (Single Page Application), y luego, las seguiremos haciendo pero mediante carga perezosa (lazyload), esta es otra aplicación real que nos enseñara mucho de cómo funciona Angular y como la información fluye en ella.
+
+## Segunda Parte
+
+>Aquí continuaremos la aplicación de países, pero enfocados en la parte de las sugerencias y auto-completado, este es un breve listado de los temas fundamentales:
+
+1. ngClass y diferentes formas de manipular clases
+
+2. CSS condicionales
+
+3. Optimizaciones a peticiones HTTP
+
+4. Animaciones de CSS
+
+5. Auto-completado en la búsqueda de países
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 
